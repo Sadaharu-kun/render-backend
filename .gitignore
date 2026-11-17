@@ -1,0 +1,144 @@
+# [x] Env variabler och nycklar
+# [x] Node.js och TypeScript
+#     [x] Package Managers
+# [x] OS Specifika filer
+# [x] Editor filer
+# [x] Cache
+# [x] Python specifika filer
+# [x] Docker
+# [x] Vue - Nuxt
+# [x] React - Next
+# [x] Logs
+
+# [ ] Certifikat och secrets
+# [ ] Storybook
+# [ ] Serverless / Cloud
+# [ ] Turborepo
+
+#====== Most important ======
+# .env file
+# **/*.env
+**/*.env*
+# SSH Keys
+**/*.pem
+**/*.key
+
+#====== NODE-JS ======
+**/node_modules/
+**/dist/
+**/build/
+npm-debug.log*
+**/coverage/
+# TypeScript
+*.tsbuildinfo
+*.tmp
+*.temp
+# ====== PACKAGE MANAGERS ======
+.pnpm-store/
+# varför inte *.yarn/*
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+# optional, some teams commit this
+# pnpm-lock.yaml
+
+
+
+#====== Operation System Files ======
+# macOS
+.DS_Store
+Thumbs.db
+# Windows
+desktop.ini
+# Samsung files
+.nomedia
+
+
+#====== Editor files ======
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+#====== Cache ======
+**/.cache/
+**/.turbo/
+**/.eslintcache
+
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+#====== Docker ======
+**/.docker/
+docker-compose.override.yml
+
+
+#====== NUXT ======
+**/.nuxt/
+**/out/
+
+#====== NEXT.js ======
+**/.next/
+**/.output/
+**/nitro.json
+
+#====== LOGS ======
+**/logs/
+*.log
+
+#====== Testing ======
+**/.nyc_output/
+**/test-results/
+**/playwright-report/
+
+# Många teams kan vilja comitta detta
+# prisma/migrations/
+
+#====== Certificates & Secrets ======
+**/*.cert
+**/*.p12
+**/*.pfx
+
+#====== Storybook ======
+**/storybook-static/
+
+#====== Serverless / Cloud ======
+.serverless/
+.vercel/
+.netlify/
+
+#====== Turborepo ======
+**/.turbo/
+**/turbo/
+
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
